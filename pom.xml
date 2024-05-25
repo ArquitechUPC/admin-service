@@ -74,6 +74,13 @@
 			<version>2.1.0</version>
 		</dependency>
 
+		<!-- Stripe API -->
+		<dependency>
+			<groupId>com.stripe</groupId>
+			<artifactId>stripe-java</artifactId>
+			<version>25.8.0</version>
+		</dependency>
+
 
 		<!--	EUREKA CLIENT-->
 		<dependency>
@@ -90,8 +97,12 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-openfeign-core</artifactId>
+        </dependency>
 
-	</dependencies>
+    </dependencies>
 
 	<!--	EUREKA CLIENT-->
 	<dependencyManagement>

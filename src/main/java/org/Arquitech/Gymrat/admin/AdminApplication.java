@@ -5,9 +5,11 @@ import io.swagger.v3.oas.annotations.info.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableDiscoveryClient
 @SpringBootApplication
+@EnableFeignClients
 @OpenAPIDefinition(
 		info = @Info(
 				title = "API Admin - GymRat",
@@ -18,7 +20,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 						email = "gymRat@gmail.com"),
 				license = @License(
 						name = "Apache 2.0",
-						url = "http://www.apache.org/licenses/LICENSE-2.0.html"
+						url = "https://www.apache.org/licenses/LICENSE-2.0.html"
 				)
 		)
 )
