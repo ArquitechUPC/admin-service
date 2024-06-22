@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
 @Tag(name = "Trainers", description = "Create, Read, Update and delete trainers entities")
 @RestController
 @RequestMapping("api/v1/trainers")
